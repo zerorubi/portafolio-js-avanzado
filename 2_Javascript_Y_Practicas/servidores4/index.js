@@ -32,7 +32,7 @@ const server = http.createServer((req, res)=>{
                     const aux =path.split('.');
                     const extension = aux[ aux.length-1];
                     const mimeType = MIME[extension];
-                    res.writeHead (status,{CONTENT_TYPE: mimeType};
+                    res.writeHead (status,{CONTENT_TYPE: mimeType});
                     res.write (response);
                     res.end();
                 }
