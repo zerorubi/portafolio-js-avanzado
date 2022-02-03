@@ -38,7 +38,7 @@ const server = http.createServer((req, res)=>{
                 }
             })
         }else{
-            status = 404;
+            status = 404;cd
             response = {message: 'Not found'};
             res.writeHead (status, {CONTENT_TYPE: MIME.json});
             res.write(response);
